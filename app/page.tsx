@@ -81,7 +81,6 @@ export default function Home() {
 
   return (
     <div className="flex h-screen bg-gray-50">
-      {/* Sidebar */}
       <aside className={`${sidebarOpen ? 'w-64' : 'w-0'} transition-all duration-300 bg-blue-900 text-white overflow-hidden`}>
         <div className="p-6">
           <h1 className="text-2xl font-bold mb-2">Abdullah Dental Care</h1>
@@ -108,9 +107,7 @@ export default function Home() {
         </nav>
       </aside>
 
-      {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-hidden">
-        {/* Header */}
         <header className="bg-white shadow-sm border-b border-gray-200">
           <div className="flex items-center justify-between px-6 py-4">
             <div className="flex items-center">
@@ -130,7 +127,6 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Module Content */}
         <main className="flex-1 overflow-y-auto p-6">
           {activeModule === 'dashboard' && (
             <div>
