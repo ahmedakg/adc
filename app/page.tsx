@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { 
   Users, Calendar, FileText, DollarSign, 
   Beaker, Package, TrendingUp, Database,
-  Menu, X, Home
+  Menu, X, Home as HomeIcon
 } from 'lucide-react';
 import PatientManagement from '@/components/PatientManagement';
 import AppointmentScheduler from '@/components/AppointmentScheduler';
@@ -66,7 +66,7 @@ export default function Home() {
   };
 
   const menuItems = [
-    { id: 'dashboard', icon: Home, label: 'Dashboard' },
+    { id: 'dashboard', icon: HomeIcon, label: 'Dashboard' },
     { id: 'patients', icon: Users, label: 'Patients' },
     { id: 'appointments', icon: Calendar, label: 'Appointments' },
     { id: 'treatments', icon: FileText, label: 'Treatments' },
